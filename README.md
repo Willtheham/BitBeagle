@@ -32,7 +32,7 @@ project_root/
 
 2.  Install required libraries:
 
-  ``` pip install librosa scipy numpy ```
+    ``` pip install librosa scipy numpy ```
 
 3. Place your reference audio file inside the reference/ folder that you created.
 
@@ -40,7 +40,7 @@ project_root/
 
 5. Run the script:
 
-  ``` python main.py ```
+    ``` python main.py ```
 
 6. View results printed to console or open results.csv for a full report.
 
