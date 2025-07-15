@@ -19,13 +19,13 @@ BitBeagle is a lightweight audio comparison tool that analyzes audio files and d
 ---
 
 ## File Structure
-
+```
 project_root/
 ├── reference/        # Folder containing the reference audio file (first valid audio file found will be used)
 ├── stems/            # Folder with all audio files to compare against the reference
 ├── results.csv       # Output similarity report (auto-generated)
 ├── main.py           # Main script
-
+```
 ---
 
 ## Usage
