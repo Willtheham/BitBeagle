@@ -2,7 +2,6 @@
 
 BitBeagle is a lightweight audio comparison tool that analyzes audio files and detects similarities (or differences) using MFCC (Mel-Frequency Cepstral Coefficient) features. Like a loyal beagle sniffing out audio differences, this script compares each track to a reference and reports back the most and least similar matches.
 
----
 
 ## Features
 
@@ -16,7 +15,6 @@ BitBeagle is a lightweight audio comparison tool that analyzes audio files and d
 
   Prints results directly to console
 
----
 
 ## File Structure
 ```
@@ -26,7 +24,6 @@ project_root/
 ├── results.csv       # Output similarity report (auto-generated)
 ├── main.py           # Main script
 ```
----
 
 ## Usage
 
@@ -44,7 +41,6 @@ project_root/
 
 5. View results printed to console or open results.csv for a full report.
 
----
 
 ## How It Works
   
@@ -56,7 +52,6 @@ project_root/
   
   Outputs and ranks results by similarity score (1 = identical, 0 = completely different).
   
----
 
 ## Dependencies
 
@@ -66,25 +61,21 @@ project_root/
   
   Scipy
 
----
 
 ## Why "BitBeagle"?
 
   Because this little utility sniffs out audio differences bit by bit; just like a trusty beagle on the trail.
 
----
 
 ## License
 
   MIT License: use freely, sniff responsibly. We are not responsible for illegal usage of BitBeagle. This is an Open-Source program for educational purposes only. Please provide proper credit to the repo and creator.
 
----
 
 ## Most Importantly
 
   Have fun sniffing! Questions? Leave a issue request!
 
----
 
 
   
