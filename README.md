@@ -25,21 +25,24 @@ project_root/
 ├── main.py           # Main script
 ```
 
+
 ## Usage
 
-1. Install required libraries:
+1. Download Github Repo (Code -> Download ZIP -> Extract ZIP)
+
+2.  Install required libraries:
 
   ``` pip install librosa scipy numpy ```
 
-2. Place your reference audio file inside the reference/ folder that you created.
+3. Place your reference audio file inside the reference/ folder that you created.
 
-3. Add all audio files you want to compare into the stems/ folder that you created.
+4. Add all audio files you want to compare into the stems/ folder that you created.
 
-4. Run the script:
+5. Run the script:
 
   ``` python main.py ```
 
-5. View results printed to console or open results.csv for a full report.
+6. View results printed to console or open results.csv for a full report.
 
 
 ## How It Works
