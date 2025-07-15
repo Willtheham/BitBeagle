@@ -1,4 +1,4 @@
-#🐶 BitBeagle
+# 🐶 BitBeagle
 
 BitBeagle is a lightweight audio comparison tool that analyzes audio files and detects similarities (or differences) using MFCC (Mel-Frequency Cepstral Coefficient) features. Like a loyal beagle sniffing out audio differences, this script compares each track to a reference and reports back the most and least similar matches.
 
