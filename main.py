@@ -4,17 +4,16 @@ import numpy as np
 from scipy.spatial.distance import cosine
 import csv
 
-# Supported audio formats
 AUDIO_EXTENSIONS = ('.wav', '.mp3', '.flac', '.ogg', '.aac', '.m4a')
 
 def extract_mfcc(file_path, sr=44100):
     """
     Load the full audio file at 44.1kHz and extract averaged MFCCs.
     """
-    y, _ = librosa.load(file_path, sr=sr, mono=True)  # Load full duration
+    y, _ = librosa.load(file_path, sr=sr, mono=True)  
     rms = np.sqrt(np.mean(y**2))
     if rms > 0:
-        y = y / rms  # Normalize to consistent loudness
+        y = y / rms  
 
     mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=20)
     return np.mean(mfcc, axis=1)
@@ -28,7 +27,7 @@ def compare_similarity(reference_vec, target_vec):
 
 def find_reference_file(reference_folder):
     """
-    Return the first valid audio file in the reference folder.
+    Return the first valid audio file in the ref folder
     """
     for file in os.listdir(reference_folder):
         if file.lower().endswith(AUDIO_EXTENSIONS):
@@ -72,7 +71,6 @@ def analyze_audio_similarity(reference_folder, stems_folder, output_csv="results
         print(" No valid audio files found in the stems folder.")
 
 if __name__ == "__main__":
-    # Change these paths as needed:
     stems_folder = "stems"
     reference_folder = "reference"
     analyze_audio_similarity(reference_folder, stems_folder)
